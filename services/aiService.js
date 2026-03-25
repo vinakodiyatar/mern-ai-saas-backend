@@ -2,7 +2,6 @@ import { buildPrompt } from "../utils/buildPrompt.js";
 import { safeParse } from "../utils/safeParse.js";
 import { mistral } from "../config/aiConfig.js";
 
-
 // ─── AI Callers ───────────────────────────────────────────────────────────────
 
 const callGemini = async (prompt, retries = 3) => {
@@ -32,7 +31,6 @@ const callGemini = async (prompt, retries = 3) => {
     }
   }
 };
-
 
 export const callMistral = async (prompt, retries = 3) => {
   for (let i = 0; i < retries; i++) {
